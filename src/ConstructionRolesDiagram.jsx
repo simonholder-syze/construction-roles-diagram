@@ -1,4 +1,4 @@
-/* Construction Roles Diagram — Client‑Centred (React + SVG, CDN-friendly)
+/* Construction Roles Relationship to Client (React + SVG, CDN-friendly)
    Edit NODES/EDGES below to reposition or relink. */
 
 const NODES = {
@@ -6,8 +6,8 @@ const NODES = {
   PD: { label: "Architect (PD)",              x: 530, y: 90,  r: 48 },
   PA: { label: "Planning (LA)",              x: 860, y: 160, r: 46 },
   BC: { label: "Inspector (BCO)",                x: 860, y: 440, r: 46 },
-  SW: { label: "Southern Water (SW)",                  x: 530, y: 540, r: 46 },
-  PC: { label: "Builder - Syze (PC)",     x: 220, y: 440, r: 46 },
+  SW: { label: "Water Co. (SW)",                  x: 530, y: 540, r: 46 },
+  PC: { label: "Builder (PC)",     x: 220, y: 440, r: 46 },
   SE: { label: "Engineer (SE)",             x: 220, y: 160, r: 46 },
 };
 
@@ -67,10 +67,10 @@ function curvedPath(a, b) {
 function Node({ n }) {
   return (
     <g>
-      <circle cx={n.x} cy={n.y} r={n.r} fill="#ffffff" stroke="#cbd5e1" strokeWidth="2" />
+      <circle cx={n.x} cy={n.y} r={n.r} fill="#fde68a" stroke="#f59e0b" strokeWidth="2" />
       <text x={n.x} y={n.y} textAnchor="middle" dominantBaseline="middle" fontSize="12" fill="#334155">
-        {n.label}
-      </text>
+  {n.label}
+</text>
     </g>
   );
 }

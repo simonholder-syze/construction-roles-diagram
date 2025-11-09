@@ -2,13 +2,13 @@
    Edit NODES/EDGES below to reposition or relink. */
 
 const NODES = {
-  C:  { label: "Client",                               x: 530, y: 300, r: 64 },
-  PD: { label: "Principal Designer (PD)",              x: 530, y: 90,  r: 48 },
-  PA: { label: "Planning Authority (PA)",              x: 860, y: 160, r: 46 },
-  BC: { label: "Building Control (BC)",                x: 860, y: 440, r: 46 },
+  C:  { label: "Client (You)",                               x: 530, y: 300, r: 64 },
+  PD: { label: "Architect (PD)",              x: 530, y: 90,  r: 48 },
+  PA: { label: "Planning (LA)",              x: 860, y: 160, r: 46 },
+  BC: { label: "Inspector (BCO)",                x: 860, y: 440, r: 46 },
   SW: { label: "Southern Water (SW)",                  x: 530, y: 540, r: 46 },
-  PC: { label: "Principal Contractor (PC) — Syze",     x: 220, y: 440, r: 46 },
-  SE: { label: "Structural Engineer (SE)",             x: 220, y: 160, r: 46 },
+  PC: { label: "Builder - Syze (PC)",     x: 220, y: 440, r: 46 },
+  SE: { label: "Engineer (SE)",             x: 220, y: 160, r: 46 },
 };
 
 /* Edge legend:

@@ -18,7 +18,7 @@ const EDGES = [
   // Client links (simple plain lines, no arrowheads)
   { from: "C", to: "PD", type: "plain" },
   { from: "C", to: "PC", type: "plain" },
-  { from: "C", to: "SE", type: "plain" },
+  
   { from: "C", to: "BC", type: "plain" },
   { from: "C", to: "PA", type: "plain" },
   
@@ -27,11 +27,11 @@ const EDGES = [
   { from: "PD", to: "PA", type: "one" },            // submission
   { from: "PD", to: "PC", type: "two" },            // coordination
   { from: "PD", to: "SE", type: "two" },            // structural design
-  { from: "PD", to: "BC", type: "one" },            // instruction / compliance comms
+              // instruction / compliance comms
   { from: "PD", to: "SW", type: "plain", dashed: true }, // shared info only
 
   // PC connections
-  { from: "PC", to: "BC", type: "two" , dashed: false },            // inspections
+  { from: "PC", to: "BC", type: "two", dashed: false },            // inspections
 { from: "PC", to: "SE", type: "plain", dashed: false },
    
   // SW additional reference link

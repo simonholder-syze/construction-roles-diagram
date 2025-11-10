@@ -2,11 +2,11 @@
    Edit NODES/EDGES below to reposition or relink. */
 
 const NODES = {
-  C:  { label: "Client (You)",                               x: 530, y: 300, r: 64 },
+  C:  { label: "Client",                               x: 530, y: 300, r: 64 },
   PD: { label: "Architect (PD)",              x: 530, y: 90,  r: 48 },
-  PA: { label: "Planning (LA)",              x: 860, y: 160, r: 46 },
-  BC: { label: "Inspector (BCO)",                x: 860, y: 440, r: 46 },
-  SW: { label: "Water Co. (SW)",                  x: 530, y: 540, r: 46 },
+  PA: { label: "Planning (LPA)",              x: 860, y: 160, r: 46 },
+  BC: { label: "Inspector (BCO)",                x: 530, y: 540, r: 46 },
+  SW: { label: "Water Co. (WC)",                  x: 860, y: 440, r: 46 },
   PC: { label: "Builder (PC)",     x: 220, y: 440, r: 46 },
   SE: { label: "Engineer (SE)",             x: 220, y: 160, r: 46 },
 };
@@ -21,7 +21,7 @@ const EDGES = [
   { from: "C", to: "SE", type: "plain" },
   { from: "C", to: "BC", type: "plain" },
   { from: "C", to: "PA", type: "plain" },
-  { from: "C", to: "SW", type: "plain" },
+  
 
   // PD connections
   { from: "PD", to: "PA", type: "one" },            // submission
@@ -31,8 +31,9 @@ const EDGES = [
   { from: "PD", to: "SW", type: "plain", dashed: true }, // shared info only
 
   // PC connections
-  { from: "PC", to: "BC", type: "two" },            // inspections
-
+  { from: "PC", to: "BC", type: "two" , dashed: false },            // inspections
+{ from: "PC", to: "SE", type: "plain", dashed: false },
+   
   // SW additional reference link
   { from: "SW", to: "BC", type: "plain", dashed: true },
 ];

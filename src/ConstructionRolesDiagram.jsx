@@ -16,7 +16,7 @@ const NODES = {
    dashed: true for reference-only links */
 const EDGES = [
   // Client links (simple plain lines, no arrowheads)
-  { from: "C", to: "PD", type: "plain" },
+  { from: "C", to: "PD", type: "plain", dashed: true },
   { from: "C", to: "PC", type: "plain" },
   
   { from: "C", to: "BC", type: "plain" },

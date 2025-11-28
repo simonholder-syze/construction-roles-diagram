@@ -3,12 +3,12 @@
 
 const NODES = {
   C:  { label: "Client",                               x: 530, y: 300, r: 64 },
-  PD: { label: "Architect (PD)",              x: 530, y: 90,  r: 48 },
-  PA: { label: "Planning (LPA)",              x: 860, y: 160, r: 46 },
-  BC: { label: "Inspector (BCO)",                x: 530, y: 540, r: 46 },
-  SW: { label: "Water Co. (WC)",                  x: 860, y: 440, r: 46 },
-  PC: { label: "Builder (PC)",     x: 220, y: 440, r: 46 },
-  SE: { label: "Engineer (SE)",             x: 220, y: 160, r: 46 },
+  PD: { label: "Architect",              x: 530, y: 90,  r: 64 },
+  PA: { label: "Local Planning",              x: 860, y: 160, r: 46 },
+  BC: { label: "Building Control",                x: 530, y: 540, r: 64 },
+  SW: { label: "Water Company",                  x: 860, y: 440, r: 46 },
+  PC: { label: "Syze Developments",     x: 220, y: 440, r: 64 },
+  SE: { label: "Structural Engineer",             x: 220, y: 160, r: 64 },
 };
 
 /* Edge legend:
